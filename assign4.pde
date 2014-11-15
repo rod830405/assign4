@@ -145,8 +145,8 @@ void keyPressed() {
 void alienMaker() {
   aList[0]= new Alien(50, 50);
   for(int i = 0; i < alienCount; i++){
-  int alienCol = i/12;
-  int alienRow = i%12;
+  int alienCol = int (i/12);
+  int alienRow = int (i%12);
   aList[i] = new Alien(50+alienRow*40,50+alienCol*50);
   }
 }
